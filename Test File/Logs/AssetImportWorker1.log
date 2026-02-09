@@ -611,3 +611,78 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 6933.080372 seconds.
+  path: Assets/Sprites/UXUI/UI DuckHunt/MainBar.png
+  artifactKey: Guid(f2313081202a9ed4789b911af8611c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UXUI/UI DuckHunt/MainBar.png using Guid(f2313081202a9ed4789b911af8611c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0e1c3e025e784aa1886f81a9c63ceb5c') in 0.113105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sprites/UXUI/UI DuckHunt/YouWin.png
+  artifactKey: Guid(3d9d93454bd670c47b0a580a54d7656d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UXUI/UI DuckHunt/YouWin.png using Guid(3d9d93454bd670c47b0a580a54d7656d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3a74e2f3039adddaea85ab39c3b13613') in 0.021762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.637629 seconds.
+  path: Assets/Sprites/UXUI/UI DuckHunt/NakedUI/BallGreen(Naked).png
+  artifactKey: Guid(2746100d8681a234ebaf6d3d587ad1d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UXUI/UI DuckHunt/NakedUI/BallGreen(Naked).png using Guid(2746100d8681a234ebaf6d3d587ad1d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c24a8480cddc95ee16be465e5fbbafc1') in 0.030802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/UXUI/UI DuckHunt/NakedUI/SHOTS(Naked).png
+  artifactKey: Guid(919ac7b5fda99aa40abf9ca9e8f05200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UXUI/UI DuckHunt/NakedUI/SHOTS(Naked).png using Guid(919ac7b5fda99aa40abf9ca9e8f05200) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '39630a00fdf7fb3b74be86d75a70ce21') in 0.020281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/UXUI/UI DuckHunt/NakedUI/BulletBlack(Naked).png
+  artifactKey: Guid(c70affa33d06d324b8a8060b8b8bf8d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UXUI/UI DuckHunt/NakedUI/BulletBlack(Naked).png using Guid(c70affa33d06d324b8a8060b8b8bf8d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '67b670dcd93d6a84097d8588c68bef7f') in 0.023317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/UXUI/UI DuckHunt/NakedUI/SmallerBar(Naked).png
+  artifactKey: Guid(598e16a66b0f0bc43b681bd3e5da1ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UXUI/UI DuckHunt/NakedUI/SmallerBar(Naked).png using Guid(598e16a66b0f0bc43b681bd3e5da1ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7db19079fb19834d98bf5f8a16263a11') in 0.015688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/UXUI/UI DuckHunt/NakedUI/BulletWhite(Naked).png
+  artifactKey: Guid(84775d6f6a775454ab10a6eb51752435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UXUI/UI DuckHunt/NakedUI/BulletWhite(Naked).png using Guid(84775d6f6a775454ab10a6eb51752435) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b9a05a051494bbd8257661aa7b5b4e8c') in 0.016392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
