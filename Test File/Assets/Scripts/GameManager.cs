@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public float horizontalScreenSize;
-    public float verticalScreenSize;
+    private float horizontalScreenSize;
+    private float verticalScreenSize;
 
     public GameObject enemyPrefab;
 
@@ -14,7 +16,7 @@ public class GameManager : MonoBehaviour
     public int score;
     public TextMeshProUGUI duckText;
     public int ducksLost;
-    public TextMeshProUGUI gameOverText;
+    public GameObject gameOverText;
 
     private bool gameOver;
     // Start is called before the first frame update
@@ -42,7 +44,7 @@ public class GameManager : MonoBehaviour
 
     void CreateDuck()
     {
-        Instantiate(enemyPrefab, new Vector3(Random.Range(-horizontalScreenSize, horizontalScreenSize), -verticalScreenSize + 1, 0), Quaternion.Euler(0, 0, 0));
+        Instantiate(enemyPrefab, new Vector3(Random.Range(-horizontalScreenSize, horizontalScreenSize), -verticalScreenSize - 1, 0), Quaternion.Euler(0, 0, 0));
     }
 
     public void AddScore(int earnedScore)
@@ -71,6 +73,7 @@ public class GameManager : MonoBehaviour
     void GameOver()
     {
         gameOver = true;
+        CancelInvoke();
         gameOverText.SetActive(true);
     }
 }
