@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI duckText;
     public int ducksLost;
     public GameObject gameOverText;
+    public bool gamePaused;
+    public TextMeshProUGUI pauseText;
 
     private bool gameOver;
     // Start is called before the first frame update
@@ -39,6 +41,19 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0;
             CancelInvoke();
             GameOver();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && gamePaused == false)
+        {
+            Time.timeScale = 0;
+            pauseText.gameObject.SetActive(true);
+            gamePaused = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && gamePaused == true)
+        {
+            Time.timeScale = 1;
+            pauseText.gameObject.SetActive(false);
+            gamePaused = false;
         }
     }
 

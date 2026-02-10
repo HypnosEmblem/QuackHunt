@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TestDuckKill : MonoBehaviour
@@ -20,13 +21,23 @@ public class TestDuckKill : MonoBehaviour
             gameManager.FlyAway(1);
             Destroy(gameObject);
         }
+
     }
 
-    private void OnMouseDown()
+    void OnMouseDown()
     {
-        gameManager.AddScore(1);
-        // explosion.SetActive(true);
-        Destroy(gameObject);
+        if (gameManager.gamePaused == true)
+        {
+            return;
+        }
+        else if (gameManager.gamePaused == false)
+        {
+            gameManager.AddScore(1);
+            Destroy(gameObject);
+        }
+
     }
+
+
 }
 
