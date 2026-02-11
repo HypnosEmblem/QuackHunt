@@ -4,16 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
+
 {
 
-    public void PlayGame()
+    // Start is called before the first frame update
+    void Start()
     {
-        SceneManager.LoadSceneAsync(1);
     }
 
-    public void StartMenu()
+    // Update is called once per frame
+    void Update()
     {
-        SceneManager.LoadSceneAsync(0);
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
-
 }

@@ -7,11 +7,13 @@ public class TestDuckKill : MonoBehaviour
 {
     // public GameObject explosion;
     private GameManager gameManager;
+    private UIManager uiManager;
 
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameObject.Find("Manager").GetComponent<GameManager>();
+        uiManager = GameObject.Find("Manager").GetComponent<UIManager>();
 
     }
 
@@ -21,22 +23,32 @@ public class TestDuckKill : MonoBehaviour
         if (transform.position.y > 6)
         {
             gameManager.FlyAway(1);
+            gameManager.duckCount = gameManager.duckCount - 1;
+            uiManager.DuckMiss();
+            Debug.Log("duck missed! " + gameManager.duckTotal + " many ducks spawned");
             Destroy(gameObject);
         }
 
+        if (gameManager.gameOver == true)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnMouseDown()
     {
-        if (gameManager.gamePaused == true)
+        if (gameManager.gamePaused == true || gameManager.roundLoss == true)
         {
             return;
         }
-        else if (gameManager.gamePaused == false && gameManager.bullets >= 0)
+        else if (gameManager.gamePaused == false && gameManager.bullets > 0)
         {
             gameManager.AddScore(1);
+            uiManager.BulletReload();
+            gameManager.duckCount = gameManager.duckCount - 1;
+            uiManager.DuckScore();
+            Debug.Log("duck hit! " + gameManager.duckTotal + " total ducks spawned");
             Destroy(gameObject);
-            gameManager.bullets = 3;
         }
 
     }
